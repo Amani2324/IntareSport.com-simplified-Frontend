@@ -16,7 +16,8 @@ import TermsConditionsPage from "./pages/TermsConditionsPage";
 
 const client = new ApolloClient({
   connectToDevTools: true,
-  uri: 'http://localhost:1337/graphql',
+  uri: "https://intaresport-app-a0e75edb14d5.herokuapp.com/graphql",
+ // uri: 'http://localhost:1337/graphql',
   cache: new InMemoryCache(),
 });
 const App = () => {
