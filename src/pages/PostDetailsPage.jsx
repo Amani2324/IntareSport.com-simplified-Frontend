@@ -67,6 +67,9 @@ const PostDetailsPage = ({ url }) => {
           <img
             src={`http://localhost:1337${data.post.data.attributes.coverImg?.data?.attributes?.url}`}
           />
+          <img
+            src={`https://intaresport-app-a0e75edb14d5.herokuapp.com${data.post.data.attributes.coverImg?.data?.attributes?.url}`}
+          />
         </div>
 
         {/*<ShareButton />*/}
@@ -75,7 +78,9 @@ const PostDetailsPage = ({ url }) => {
           <ReactMarkdown>{data.post.data.attributes.postContent}</ReactMarkdown>
           <SomaAyandi />
         </div>
-        <p className=" flex justify-center text-slate-900 text-xl font-bold pt-10">COMMENTAIRES</p>
+        <p className=" flex justify-center text-slate-900 text-xl font-bold pt-10">
+          COMMENTAIRES
+        </p>
         <Comments fullUrl={url} id={id} />
       </div>
       {/*
