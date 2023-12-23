@@ -64,9 +64,11 @@ const PostDetailsPage = ({ url }) => {
           </div>
         </div>
         <div className="image-content">
+          {/*
           <img
             src={`http://localhost:1337${data.post.data.attributes.coverImg?.data?.attributes?.url}`}
           />
+          */}
           <img
             src={`https://intaresport-app-a0e75edb14d5.herokuapp.com${data.post.data.attributes.coverImg?.data?.attributes?.url}`}
           />
