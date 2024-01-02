@@ -13,7 +13,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/AmakuruPage">
+              <Link to="/CategoryPage/1">
                 <span className="p-2">Amakuru</span>
               </Link>
             </li>
