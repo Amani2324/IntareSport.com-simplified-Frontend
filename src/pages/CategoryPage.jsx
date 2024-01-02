@@ -68,7 +68,7 @@ const CategoryPage = () => {
               <div className="flex flex-col border-b border-gray-300 md:border-b-0 pb-2 pl-1">
                 <div className="flex flex-row md:flex-col pb-1.5 overflow-hidden relative">
                   <img
-                    src={`http://localhost:1337${post.attributes.coverImg.data.attributes.url}`}
+                    src={`https://intaresport-app-a0e75edb14d5.herokuapp.com${post.attributes.coverImg.data.attributes.url}`}
                     className="md:w-48 md:h-40 bg-cover w-1/4 h-1/4"
                   />
 
