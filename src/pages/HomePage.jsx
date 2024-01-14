@@ -29,14 +29,14 @@ const POSTS = gql`
 `;
 
 const HomePage = () => {
-  const [visible, setVisible] = useState(3);
+  const [visible, setVisible] = useState(10);
   const { loading, error, data } = useQuery(POSTS);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>oops! Error....</p>;
   console.log(data);
 
   const showMorePosts = () => {
-    setVisible((prevValue) => prevValue + 5);
+    setVisible((prevValue) => prevValue + 10);
   };
 
   return (

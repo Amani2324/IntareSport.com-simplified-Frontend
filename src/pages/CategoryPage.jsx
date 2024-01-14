@@ -45,7 +45,7 @@ const CATEGORY = gql`
 `;
 
 const CategoryPage = () => {
-  const [visible, setVisible] = useState(3);
+  const [visible, setVisible] = useState(10);
   const { id } = useParams();
   const { loading, error, data } = useQuery(CATEGORY, {
     variables: { id: id },
@@ -55,7 +55,7 @@ const CategoryPage = () => {
   console.log(data);
 
   const showMorePosts = () => {
-    setVisible((prevValue) => prevValue + 5);
+    setVisible((prevValue) => prevValue + 10);
   };
 
   return (
