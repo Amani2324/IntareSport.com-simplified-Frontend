@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 //import ShareButton from "../Components/ShareButton";
-import CommentSection from "../Components/CommentSection";
+//import CommentSection from "../Components/CommentSection";
 import Footer from "../Components/Footer";
 //import NewsLetter from "../Components/NewsLetter";
 import { useQuery, gql } from "@apollo/client";
@@ -80,10 +80,13 @@ const PostDetailsPage = ({ url }) => {
           <ReactMarkdown>{data.post.data.attributes.postContent}</ReactMarkdown>
           <SomaAyandi />
         </div>
+
+        {/*
         <p className=" flex justify-center text-slate-900 text-xl font-bold pt-10">
           COMMENTAIRES
         </p>
         <Comments fullUrl={url} id={id} />
+        */}
       </div>
       {/*
       <HotStories />
