@@ -8,7 +8,7 @@ import { useQuery, gql } from "@apollo/client";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 //import DisqusThread from "../Components/DisqusThread";
 //import DisqusComments from "./DisqusComment";
-import Comments from "./Comments";
+//import Comments from "./Comments";
 import SomaAyandi from "../Components/SomaAyandi";
 
 const POST = gql`
