@@ -45,7 +45,7 @@ li {
   @apply flex md:justify-center;
 }
 .image-content img {
-  @apply  md:w-80 md:h-72 w-64 h-52 mx-auto;
+  @apply  md:w-80 md:h-72 w-52 h-52 mx-auto;
 }
 
 .commentSection textarea {
